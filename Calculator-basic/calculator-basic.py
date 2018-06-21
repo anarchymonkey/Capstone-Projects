@@ -22,7 +22,8 @@ if __name__ == "__main__":
     sum = 0
     diffrence = 0
     product = 1
-    divide = 0
+    divide = 1
+    mod = 1
     """
     empty list to store all the variables 
     
@@ -30,18 +31,19 @@ if __name__ == "__main__":
 
     list1 = []
 
+
     """
     will take input untill the user types 0 
     
     """
     while True:
 
-        n = int(input("please enter the  numbers"))
+        n = int(input("please enter the  numbers :----> "))
 
         list1.append(n)
 
-
-        if n==0:
+        str1 = str(input('\t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t do you want to get the ans? press y or n'))
+        if str1 =='Y'.lower():
             break
 
 
@@ -56,10 +58,34 @@ if __name__ == "__main__":
     elif choice == '2':
         for i in range(0,len(list1)):
 
-            diffrence = list1[i] - diffrence
+            diffrence =list1[i]-diffrence
 
 
         print(diffrence)
+
+    elif choice == '3':
+        for i in range(0, len(list1)):
+
+            product = list1[i] * product
+
+        print(product)
+
+    elif choice == '4':
+
+        for i in range (0,len(list1)):
+            divide = list1[i]/divide
+        print(divide)
+
+    elif choice == '5':
+
+        for i in range(0, len(list1)):
+
+            mod %= list1[i]
+
+        print(float(mod))
+
+
+
 
 
 
