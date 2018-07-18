@@ -3,7 +3,7 @@ docstring: Bubble sort implementation
 
 """
 
-def BubbleSorted():
+def BubbleSorted(list1):
 
 """
 implementation goes here
